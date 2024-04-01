@@ -197,6 +197,7 @@ export default class InteractiveWebviewGenerator {
     const webViewPanel = vscode.window.createWebviewPanel("graphvizPreview", previewTitle, displayColumn, {
       enableFindWidget: false,
       enableScripts: true,
+      enableCommandUris: true,
       retainContextWhenHidden: true,
       localResourceRoots: [
         Utils.joinPath(this.context.extensionUri, "content"),
